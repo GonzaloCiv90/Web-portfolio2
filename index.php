@@ -413,23 +413,19 @@
 				<div class="col">
 					<form id="miFormulario" method="POST">
 						<input type="text" name="nombre" placeholder= "Tu Nombre" required>
-						<input type="text" name="numero" placeholder= "Número Telefónico" required>
+						<input type="text" name="telefono" placeholder= "Número Telefónico" required>
 						<input type="email" name="correo" placeholder= "Dirección de Correo" required>
 						<input type="text" name="tema" placeholder= "Tema" required>
 						<textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-						<button type="submit" id="culia" value="Enviar">
+						<div class="captcha" id="captcha">
+							<div class="g-recaptcha" data-sitekey="6Lel4h4mAAAAALVbtJkO2k4ORRHMY0Rqaf_ifY9t"></div>
+						</div>
+						<button type="submit" value="Enviar">
 							Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
 							<span class="overlay"></span>
 						</button>
 					</form>
-					<div id="respuesta"></div>
-					 <?php 
-                		if (isset ($_GET['ok_bd'])) {
-                			echo "<p style= 'color: #1CB698'>Correo enviado.</p>";
-            			};
-            		 ?>
 				</div>
-		
 				<!--mapa-->
 				<div class="col">
 					<img src="img/ubicacion.png" alt="imagen de mapa">

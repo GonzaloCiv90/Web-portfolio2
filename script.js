@@ -45,17 +45,28 @@ $(document).ready(function() {
       
      // Obtén los datos del formulario
      var formData = $(this).serialize();
+
+     // Realiza la validación del reCAPTCHA
+    var response = grecaptcha.getResponse();
+    if (response.length === 0) {
+      alert('Por favor, verifica el reCAPTCHA.');
+      return;
+    }
       
       // Realiza la solicitud AJAX
-      $.ajax({
-        type: 'POST',
-        url: 'enviar.php',
-        data: formData,
+     $.ajax({
+       type: 'POST',
+       url: 'enviar.php',
+       data: $(this).serialize(),
        success: function(response) {
-          // Aquí puedes manejar la respuesta del servidor si es necesario
-         console.log(response);
-         alert('¡Formulario enviado!');
-       },
+        var jsonResponse = JSON.parse(response);
+        if (jsonResponse.success) {
+          alert('El formulario ha sido enviado correctamente.');
+          // Aquí puedes realizar otras acciones después de que el formulario se haya enviado correctamente
+        } else {
+          alert('Error al enviar el formulario: ' + jsonResponse.message);
+        }
+      },
        error: function() {
          alert('Hubo un error al enviar el formulario.');
       }
