@@ -68,7 +68,7 @@
 				<a href="https://www.linkedin.com/in/gonzalo-civita/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 				<a href="https://www.facebook.com/gonzalo.civita/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
 				<a href="https://www.instagram.com/civitagonzalo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-				<a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+				<a href="https://github.com/GonzaloCiv90" target="_blank"><i class="fa-brands fa-github"></i></a>
 			</div>
 		</div>
 	</section>
@@ -459,7 +459,7 @@
 				<a href="https://www.linkedin.com/in/gonzalo-civita/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 				<a href="https://www.facebook.com/gonzalo.civita/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
 				<a href="https://www.instagram.com/civitagonzalo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-				<a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+				<a href="https://github.com/GonzaloCiv90" target="_blank"><i class="fa-brands fa-github"></i></a>
 			</div>
 	</footer>
 
