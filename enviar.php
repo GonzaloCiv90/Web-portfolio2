@@ -67,9 +67,9 @@ if (!$atributos['success']) {
         $mail->AltBody = 'Gracias por contactarnos';
 
         $mail->send();
-            echo 'Message has been sent <a href=index.php>Volver</a>';
+            echo json_encode('Message has been sent');
         } catch (Exception $e) {
-            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            echo json_encode('Message could not be sent. Mailer Error: {$mail->ErrorInfo}');
         }
     }
 ?>

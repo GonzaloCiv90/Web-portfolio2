@@ -60,7 +60,7 @@ $(document).ready(function() {
        data: $(this).serialize(),
        success: function(response) {
         var jsonResponse = JSON.parse(response);
-        if (jsonResponse.success) {
+        if (!jsonResponse.success) {
           alert('El formulario ha sido enviado correctamente.');
           // Aquí puedes realizar otras acciones después de que el formulario se haya enviado correctamente
         } else {
