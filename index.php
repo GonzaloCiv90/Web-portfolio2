@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-	<script src="jquery-3.7.0.min.js"></script> 
+	<script src="jquery-3.7.0.min.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicom.png">
 	<title>Portfolio: Gonzalo Civita</title>
 	<link rel="stylesheet" href="estilos.css">
 </head>
@@ -32,30 +33,7 @@
 			</div>
 		</header>
 	</div>
-	<script>
-		$(function() {
-	$('#enviar').submit(function(event) {
-    event.preventDefault();      
-    $.ajax({
-        url: 'enviar.php',
-        type: "POST",
-        data: $('#miFormulario').serialize(),
-        success: function(response) {
-            // Manejar la respuesta del servidor después de un envío exitoso
-            $('#respuesta').html(response);
-            // Puedes mostrar un mensaje de éxito, limpiar el formulario, etc.
-            },
-         error: function(xhr, status, error) {
-            // Manejar los errores de la solicitud AJAX
-            comsole.log('error')
-            // Puedes mostrar un mensaje de error o tomar otras acciones
-        }
-    });
- });
-}
-
-	</script>
-
+	
 	<!--SECTION INICIO-->
 	<section id="inicio" class="inicio">
 		<div class="contenido-banner">
@@ -418,7 +396,7 @@
 						<input type="text" name="tema" placeholder= "Tema" required>
 						<textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
 						<div class="captcha" id="captcha">
-							<div class="g-recaptcha" data-sitekey="6Lel4h4mAAAAALVbtJkO2k4ORRHMY0Rqaf_ifY9t"></div>
+							<div class="g-recaptcha" data-sitekey="*****"></div>
 						</div>
 						<button type="submit" value="Enviar">
 							Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
